@@ -647,6 +647,7 @@ nav {
 .education-section {
     padding: 80px 5%;
     background: var(--bg-secondary);
+    margin-top: 20px;
 }
 
 .education-timeline {
