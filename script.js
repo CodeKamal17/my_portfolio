@@ -84,24 +84,56 @@ document.addEventListener("click", (e) => {
 });
 
 // ===========================
-// NAMASTE SOUND EFFECT
+// NAMASTE SOUND EFFECT & FLOATING ANIMATION
 // ===========================
 const namasteIcon = document.getElementById("namaste-icon");
 const namasteSound = document.getElementById("namaste-sound");
 
 namasteIcon.addEventListener("click", () => {
+    // Play sound
     namasteSound.currentTime = 0;
     namasteSound.volume = 1.0;
     namasteSound.play().catch(err => {
         console.log("Audio play failed:", err);
     });
     
-    // Add animation
+    // Create floating namaste icons
+    createFloatingNamaste();
+    
+    // Add pulse animation to main icon
     namasteIcon.style.animation = "none";
     setTimeout(() => {
         namasteIcon.style.animation = "";
     }, 10);
 });
+
+// Function to create floating namaste emojis
+function createFloatingNamaste() {
+    const numberOfEmojis = 5; // Number of floating emojis
+    const iconRect = namasteIcon.getBoundingClientRect();
+    
+    for (let i = 0; i < numberOfEmojis; i++) {
+        setTimeout(() => {
+            const floatingEmoji = document.createElement('div');
+            floatingEmoji.className = 'floating-namaste';
+            floatingEmoji.textContent = '🙏';
+            
+            // Random horizontal offset
+            const randomOffset = (Math.random() - 0.5) * 100;
+            
+            // Position at the namaste icon location
+            floatingEmoji.style.left = (iconRect.left + iconRect.width / 2) + randomOffset + 'px';
+            floatingEmoji.style.top = iconRect.top + 'px';
+            
+            document.body.appendChild(floatingEmoji);
+            
+            // Remove element after animation completes
+            setTimeout(() => {
+                floatingEmoji.remove();
+            }, 3000);
+        }, i * 100); // Stagger the animation
+    }
+}
 
 // ===========================
 // TYPING EFFECT

@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>s
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Kamal Thapa - Full Stack Developer & Coding Enthusiast. Explore my portfolio showcasing web development projects, skills in HTML, CSS, JavaScript, and more.">
-    <meta name="keywords"
-        content="Kamal Thapa, Web Developer, Portfolio, HTML, CSS, JavaScript, Web Design, Nepal Developer">
+    <meta name="description" content="Kamal Thapa - Full Stack Developer & Coding Enthusiast. Explore my portfolio showcasing web development projects, skills in HTML, CSS, JavaScript, and more.">
+    <meta name="keywords" content="Kamal Thapa, Web Developer, Portfolio, HTML, CSS, JavaScript, Web Design, Nepal Developer">
     <meta name="author" content="Kamal Thapa">
-
-    <title>Kamal - Portfolio | Full Stack Developer</title>
-
+    
+    <title>Kamal Thapa - Portfolio | Full Stack Developer</title>
+    
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">s
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Network Background Canvas -->
+    <!-- <canvas id="networkCanvas"></canvas> -->
+    
     <!-- Header -->
     <header>
         <nav>
             <div class="leftnav">Kamal's Portfolio</div>
-
-            <!-- Dark Mode Toggle -->
-            <div class="theme-toggle" id="themeToggle" title="Toggle dark mode">
-                <i class="fas fa-moon"></i>
-            </div>
-
+            
             <!-- Hamburger Menu -->
             <div class="hamburger" id="hamburger" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-
+            
             <div class="rightnav" id="navMenu">
                 <ul>
+                    <!-- Dark Mode Toggle - Moved here -->
+                    <li class="theme-toggle-item">
+                        <div class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <!-- <li><a href="#experience" class="nav-link">Experience</a></li> -->
@@ -82,10 +83,10 @@
                         <i class="fas fa-envelope"></i> Get In Touch
                     </a>
                     <a href="kamalresume.pdf" class="btn btn-secondary" target="_blank">
-                        <i class="fas fa-download"></i> My Resume
+                        <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
-
+                
                 <!-- Social Links -->
                 <div class="social-links">
                     <a href="https://github.com/kamalthapa" target="_blank" rel="noopener" title="GitHub">
@@ -103,7 +104,24 @@
                 </div>
             </div>
             <div class="rightsection fade-in">
-                <img src="developer.png" alt="Developer illustration" loading="lazy">
+                <!-- Circular Rings Animation with Revolving Particles -->
+                <div class="image-container">
+                    <div class="rings">
+                        <div class="ring ring-1">
+                            <div class="ring-particle particle-1"></div>
+                            <div class="ring-particle particle-2"></div>
+                        </div>
+                        <div class="ring ring-2">
+                            <div class="ring-particle particle-3"></div>
+                            <div class="ring-particle particle-4"></div>
+                        </div>
+                        <div class="ring ring-3">
+                            <div class="ring-particle particle-5"></div>
+                            <div class="ring-particle particle-6"></div>
+                        </div>
+                    </div>
+                    <img src="developer.png" alt="Developer illustration" loading="lazy">
+                </div>
             </div>
         </section>
 
@@ -114,25 +132,127 @@
                 <div class="about-content">
                     <div class="about-text">
                         <p class="lead">
-                            Self-driven <strong class="navyblue">IT Engineering student</strong> and
-                            <strong class="navyblue">coding enthusiast</strong> with a strong foundation in
+                            Self-driven <strong class="navyblue">IT Engineering student</strong> and 
+                            <strong class="navyblue">coding enthusiast</strong> with a strong foundation in 
                             web development, problem-solving, and digital content creation.
                         </p>
                         <p>
-                            I'm passionate about building responsive, user-centric applications using modern
-                            technologies. With a proven ability to self-learn and adapt to new technologies
-                            quickly, I'm constantly exploring new programming languages, frameworks, and
+                            I'm passionate about building responsive, user-centric applications using modern 
+                            technologies. With a proven ability to self-learn and adapt to new technologies 
+                            quickly, I'm constantly exploring new programming languages, frameworks, and 
                             problem-solving techniques to strengthen my understanding of the digital world.
                         </p>
                         <p>
-                            My goal is to <strong class="navyblue">master coding and software development</strong>
-                            by building real-world projects that make a positive impact. I love the challenge of
+                            My goal is to <strong class="navyblue">master coding and software development</strong> 
+                            by building real-world projects that make a positive impact. I love the challenge of 
                             turning complex problems into simple, beautiful, and intuitive solutions.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- ===========================
+             EXPERIENCE SECTION (COMMENTED OUT)
+             Uncomment this section when you want to add it back
+        =========================== -->
+        <!--
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-intro">My professional journey and contributions</p>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <h3>Freelance Web Developer</h3>
+                            <h4>Self-Employed</h4>
+                            <ul>
+                                <li>Developed responsive websites for <strong>5+ local businesses</strong></li>
+                                <li>Provided video editing services generating <strong>100K+ views</strong></li>
+                                <li>Maintained <strong>100% client satisfaction rate</strong></li>
+                            </ul>
+                            <div class="tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - Present</div>
+                            <h3>Content Creator & Designer</h3>
+                            <h4>Self-Initiated</h4>
+                            <ul>
+                                <li>Created content reaching <strong>10K+ developers</strong></li>
+                                <li>Designed <strong>50+ graphics</strong> for campaigns</li>
+                                <li>Achieved <strong>85% viewer retention rate</strong></li>
+                            </ul>
+                            <div class="tags">
+                                <span class="tag">Photoshop</span>
+                                <span class="tag">Premiere Pro</span>
+                                <span class="tag">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- ===========================
+             PROJECTS SECTION (COMMENTED OUT)
+             Uncomment this section when you want to add it back
+        =========================== -->
+        <!--
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-intro">A selection of my recent work and personal projects</p>
+
+                <div class="projects-grid">
+                    <div class="project-card reveal">
+                        <div class="project-image">
+                            <img src="project-portfolio.jpg" alt="Personal Portfolio">
+                            <div class="project-overlay">
+                                <a href="#home" class="btn-icon" title="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/kamalthapa" class="btn-icon" title="View Code" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>A fully responsive portfolio with interactive UI features</p>
+                            <ul class="project-highlights">
+                                <li><i class="fas fa-check"></i> <strong>95+ Lighthouse score</strong></li>
+                                <li><i class="fas fa-check"></i> Smooth animations</li>
+                                <li><i class="fas fa-check"></i> Form validation</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-more-projects">
+                    <a href="https://github.com/kamalthapa" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> View All Projects on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+        -->
 
         <!-- Skills Section -->
         <section id="skills" class="skill-section">
@@ -269,139 +389,173 @@
                     </div>
                 </div>
 
-               
-
-                <!-- Education Section -->
-                <section id="education" class="education-section">
-                    <div class="container">
-                        <h2 class="section-title">Education</h2>
-                        <p class="section-intro">My academic journey and qualifications</p>
-
-                        <div class="education-timeline">
-                            <div class="edu-item reveal">
-                                <div class="edu-icon">🎓</div>
-                                <div class="edu-content">
-                                    <div class="edu-year">2025 - Present (Expected 2029)</div>
-                                    <h3>Bachelor's in IT Engineering</h3>
-                                    <h4>National College of Information Technology</h4>
-                                    <p class="edu-description">
-                                        Currently pursuing a Bachelor's degree focused on technology and programming.
-                                        Building strong foundation in software development, algorithms, and system
-                                        design.
-                                    </p>
-                                    <div class="edu-coursework">
-                                        <strong>Relevant Coursework:</strong>
-                                        <span>Data Structures & Algorithms</span>
-                                        <span>Database Management</span>
-                                        <span>Web Technologies</span>
-                                        <span>OOP</span>
-                                        <span>Software Engineering</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="edu-item reveal">
-                                <div class="edu-icon">📚</div>
-                                <div class="edu-content">
-                                    <div class="edu-year">2023 - 2025</div>
-                                    <h3>Higher Secondary Education (+2 Science)</h3>
-                                    <h4>Urbana School of Science</h4>
-                                    <p class="edu-description">
-                                        Completed higher secondary education in the science stream, building essential
-                                        skills for analytical and logical problem-solving with focus on Mathematics,
-                                        Computer Science, and Physics.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="edu-item reveal">
-                                <div class="edu-icon">🏫</div>
-                                <div class="edu-content">
-                                    <div class="edu-year">Completed 2023</div>
-                                    <h3>Secondary Education Examination (SEE)</h3>
-                                    <h4>Gorkha Model Secondary School</h4>
-                                    <p class="edu-description">
-                                        Completed SEE with a strong academic foundation, focusing on mathematics
-                                        and computer science. Developed early interest in technology and programming.
-                                    </p>
-                                </div>
-                            </div>
+                <!-- Certifications -->
+                <!--
+                <div class="certifications-section reveal">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-certificate"></i> Certifications & Achievements
+                    </h3>
+                    <div class="certifications-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-code"></i></div>
+                            <h4>Responsive Web Design</h4>
+                            <p>freeCodeCamp</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript Algorithms & Data Structures</h4>
+                            <p>freeCodeCamp</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fab fa-git-alt"></i></div>
+                            <h4>Git & GitHub Essentials</h4>
+                            <p>Coursera</p>
+                            <span class="cert-year">2024</span>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+                            <h4>Web Design Competition</h4>
+                            <p>1st Place - School Level</p>
+                            <span class="cert-year">2023</span>
                         </div>
                     </div>
-                </section>
+                </div>
+                -->
+            </div>
+        </section>
 
-                <!-- Contact Section -->
-                <section id="contact" class="contact-section">
-                    <div class="container">
-                        <div class="contact-box reveal">
-                            <h2 class="section-title">Get In Touch</h2>
-                            <p class="section-intro">
-                                Have a project in mind or want to collaborate? I'd love to hear from you!
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <p class="section-intro">My academic journey and qualifications</p>
+
+                <div class="education-timeline">
+                    <div class="edu-item reveal">
+                        <div class="edu-icon">🎓</div>
+                        <div class="edu-content">
+                            <div class="edu-year">2025 - Present (Expected 2029)</div>
+                            <h3>Bachelor's in IT Engineering</h3>
+                            <h4>National College of Information Technology</h4>
+                            <p class="edu-description">
+                                Currently pursuing a Bachelor's degree focused on technology and programming. 
+                                Building strong foundation in software development, algorithms, and system design.
                             </p>
-
-                            <div class="contact-details">
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <div>
-                                        <strong>Email</strong>
-                                        <a href="mailto:kamalsoftworks@gmail.com">kamalsoftworks@gmail.com</a>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-phone"></i>
-                                    <div>
-                                        <strong>Phone</strong>
-                                        <a href="tel:+9779766240150">+977-9766240150</a>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div>
-                                        <strong>Location</strong>
-                                        <span>Kathmandu, Nepal</span>
-                                    </div>
-                                </div>
+                            <div class="edu-coursework">
+                                <strong>Relevant Coursework:</strong>
+                                <span>Data Structures & Algorithms</span>
+                                <span>Database Management</span>
+                                <span>Web Technologies</span>
+                                <span>OOP</span>
+                                <span>Software Engineering</span>
                             </div>
-
-                            <!-- Contact Form -->
-                            <form class="contact-form" id="contactForm" novalidate>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="name">Full Name *</label>
-                                        <input type="text" id="name" name="name" required>
-                                        <span class="error-message"></span>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="email">Email *</label>
-                                        <input type="email" id="email" name="email" required>
-                                        <span class="error-message"></span>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="subject">Subject *</label>
-                                    <input type="text" id="subject" name="subject" required>
-                                    <span class="error-message"></span>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message">Message *</label>
-                                    <textarea id="message" name="message" rows="5" required></textarea>
-                                    <span class="error-message"></span>
-                                </div>
-
-                                <button class="submit-btn" type="submit">
-                                    <span>Send Message</span>
-                                    <i class="fas fa-paper-plane"></i>
-                                </button>
-                            </form>
-
-                            <!-- Success/Error Messages -->
-                            <div class="form-response" id="formResponse"></div>
                         </div>
                     </div>
-                </section>
+
+                    <div class="edu-item reveal">
+                        <div class="edu-icon">📚</div>
+                        <div class="edu-content">
+                            <div class="edu-year">2023 - 2025</div>
+                            <h3>Higher Secondary Education (+2 Science)</h3>
+                            <h4>Urbana School of Science</h4>
+                            <p class="edu-description">
+                                Completed higher secondary education in the science stream, building essential 
+                                skills for analytical and logical problem-solving with focus on Mathematics, 
+                                Computer Science, and Physics.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="edu-item reveal">
+                        <div class="edu-icon">🏫</div>
+                        <div class="edu-content">
+                            <div class="edu-year">Completed 2023</div>
+                            <h3>Secondary Education Examination (SEE)</h3>
+                            <h4>Gorkha Model Secondary School</h4>
+                            <p class="edu-description">
+                                Completed SEE with a strong academic foundation, focusing on mathematics 
+                                and computer science. Developed early interest in technology and programming.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-box reveal">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-intro">
+                        Have a project in mind or want to collaborate? I'd love to hear from you!
+                    </p>
+
+                    <div class="contact-details">
+                        <div id="myemail" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:kamalsoftworks@gmail.com">kamalsoftworks@gmail.com</a>
+                            </div>
+                        </div>
+                        <div id="myphone" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+9779766240150">+977-9766240150</a>
+                            </div>
+                        </div>
+                        <div id="mylocation" class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Kathmandu, Nepal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+
+                        <button class="submit-btn" type="submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Success/Error Messages -->
+                    <div class="form-response" id="formResponse"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -412,16 +566,11 @@
                     <h2>Kamal Thapa</h2>
                     <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
                     <div class="footer-social">
-                        <a href="https://github.com/kamalthapa" target="_blank" rel="noopener"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/kamalthapa" target="_blank" rel="noopener"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="https://www.facebook.com/kamalchhettri17" target="_blank" rel="noopener"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/kamalchhetri__" target="_blank" rel="noopener"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/kamalthapa" target="_blank" rel="noopener"><i
-                                class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/kamalthapa" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/kamalthapa" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/kamalchhettri17" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kamalchhetri__" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/kamalthapa" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
@@ -449,8 +598,7 @@
                     <div class="footer-section">
                         <h3>Contact</h3>
                         <ul>
-                            <li><a href="mailto:kamalsoftworks@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
-                            </li>
+                            <li><a href="mailto:kamalsoftworks@gmail.com"><i class="fas fa-envelope"></i> Email Me</a></li>
                             <li><a href="tel:+9779766240150"><i class="fas fa-phone"></i> Call Me</a></li>
                             <li><a href="resume.html" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a></li>
                         </ul>
@@ -459,8 +607,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Kamal Thapa. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> and <i
-                        class="fas fa-coffee"></i></p>
+                <p>&copy; 2025 Kamal Thapa. All Rights Reserved. | Designed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
             </div>
         </div>
     </footer>
