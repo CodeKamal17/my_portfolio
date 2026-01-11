@@ -39,7 +39,7 @@
 
     --card-bg: #1e293b;
     --nav-bg: rgba(30, 41, 59, 0.98);
-    --footer-bg: #0f172a;
+    --footer-bg: #010c21;
 
     --shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     --shadow-hover: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -791,7 +791,7 @@ nav {
 }
 
 .contact-section {
-    background: var(--bg-secondary);
+    background: var(--bg-color);
     padding: 80px 5%;
     min-height: 100vh;
     display: flex;
